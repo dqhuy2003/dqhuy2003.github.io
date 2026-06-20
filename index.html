@@ -2,134 +2,154 @@
 <html lang="vi">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Đặng Quốc Huy</title>
 
 <style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
 body{
-font-family:Arial, sans-serif;
-background:#f4f4f4;
-color:#333;
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#f2f4f7;
 }
 
-.hero{
-height:100vh;
-background:url('avatar.JPG') center/cover no-repeat;
-position:relative;
+.header{
+    background:linear-gradient(135deg,#1877f2,#42a5f5);
+    height:220px;
 }
 
-.overlay{
-position:absolute;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:rgba(0,0,0,0.45);
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-color:white;
-text-align:center;
-padding:20px;
+.profile{
+    text-align:center;
+    margin-top:-80px;
 }
 
-.overlay h1{
-font-size:55px;
-margin-bottom:10px;
+.avatar{
+    width:170px;
+    height:170px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid white;
+    box-shadow:0 3px 15px rgba(0,0,0,0.2);
 }
 
-.overlay p{
-font-size:22px;
+.name{
+    font-size:32px;
+    font-weight:bold;
+    margin-top:15px;
+}
+
+.info{
+    color:#666;
 }
 
 .container{
-max-width:1000px;
-margin:auto;
-padding:20px;
+    max-width:900px;
+    margin:auto;
+    padding:20px;
 }
 
 .card{
-background:white;
-padding:25px;
-border-radius:20px;
-margin-top:20px;
-box-shadow:0 3px 15px rgba(0,0,0,0.1);
+    background:white;
+    padding:20px;
+    margin-top:20px;
+    border-radius:18px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
 }
 
 h2{
-color:#0d6efd;
-margin-bottom:15px;
+    color:#1877f2;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:10px;
+}
+
+.gallery img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:15px;
 }
 
 .btn{
-display:inline-block;
-padding:12px 20px;
-margin:10px;
-background:#0d6efd;
-color:white;
-text-decoration:none;
-border-radius:10px;
+    display:inline-block;
+    background:#1877f2;
+    color:white;
+    text-decoration:none;
+    padding:12px 18px;
+    border-radius:10px;
+    margin:5px;
 }
 
 footer{
-margin-top:30px;
-padding:20px;
-text-align:center;
-background:#0d6efd;
-color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+    background:#1877f2;
+    color:white;
 }
 </style>
+
 </head>
 
 <body>
 
-<section class="hero">
-<div class="overlay">
-<h1>ĐẶNG QUỐC HUY</h1>
-<p>Sinh viên Điều dưỡng - Đại học Đại Nam</p>
+<div class="header"></div>
+
+<div class="profile">
+    <img src="avatar.JPG" class="avatar">
+    <div class="name">Đặng Quốc Huy</div>
+    <div class="info">Sinh viên Đại học Đại Nam</div>
 </div>
-</section>
 
 <div class="container">
 
 <div class="card">
 <h2>Giới thiệu bản thân</h2>
 <p>
-Xin chào! Tôi là Huy, hiện đang là sinh viên ngành Điều dưỡng tại Đại học Đại Nam.
-Tôi luôn mong muốn học hỏi thêm kiến thức chuyên môn, phát triển bản thân và rèn luyện kỹ năng trong cuộc sống.
+Xin chào! Tôi là Huy, sinh năm 2003, hiện đang học tại Đại học Đại Nam.
+Tôi luôn cố gắng học tập, rèn luyện bản thân.
 </p>
 </div>
 
 <div class="card">
-<h2>Sở thích & Đam mê</h2>
+<h2>Đam mê & Sở thích</h2>
 <ul>
 <li>⚽ Đá bóng</li>
-<li>📚 Học ngành Điều dưỡng</li>
-<li>🚖Đi Phượt</li>
-<li>🎮 Gì Cũng Chơi</li>
+<li>🏍️ Đi phượt và khám phá những vùng đất mới</li>
+<li>🏥 Học tập ngành Điều Dưỡng</li>
+<li>🌱 Phát triển bản thân</li>
 </ul>
 </div>
 
 <div class="card">
-<h2>Thông tin liên hệ</h2>
-<p>📱 Số điện thoại: 0961527394</p>
+<h2>Khoảnh khắc cá nhân</h2>
+
+<div class="gallery">
+<img src="avatar.JPG">
+<img src="anh1.jpge">
+<img src="anh2.jpge">
+<img src="anh3.jpge">
+</div>
+
+</div>
+
+<div class="card">
+<h2>Liên hệ</h2>
+
+<p>📱 0961527394</p>
 
 <a class="btn" href="https://facebook.com/">Facebook</a>
 
 <a class="btn" href="https://instagram.com/">Instagram</a>
+
 </div>
 
 </div>
 
 <footer>
-© 2026 Đặng Quốc Huy
+© Đặng Quốc Huy
 </footer>
 
 </body>
